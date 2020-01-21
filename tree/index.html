@@ -40,20 +40,20 @@
     let a = new Tree("#treebox", file);
     //下面三个方法可用于获取删除、编辑、移动节点的数值
     a.editExpand = function(node) {
-      //调用后台传输数据
-      console.log("编辑了啥----");
+      console.log("编辑----");
       console.log(node);
     };
     a.removeExpand = function(node) {
-      console.log("删除了啥---");
+      console.log("删除---");
       console.log(node);
     };
     a.moveExpand = function(node) {
-      console.log("删除了啥---");
+      console.log("移动---");
       console.log(node);
     };
+    //获取当前树形数据
     let tree = a.getTreeData();
-    console.log(tree);
-    console.log(a.parseOrign(tree));
+    //转换为原始数据
+    a.parseOrign(tree);
   </script>
 </html>
